@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simple calculator</title>
+</head>
+<body>
+    <section>
+        <input type="text" class="display-result" id="displayResult" readonly></input>
+        <div class="keys">
+            <div class="numbers">
+                <button onclick="appendChildToDisplayResult(this.innerText)" class="number">7</button>
+                <button onclick="appendChildToDisplayResult(this.innerText)" class="number">8</button>
+                <button onclick="appendChildToDisplayResult(this.innerText)" class="number">9</button>
+                <button onclick="appendChildToDisplayResult(this.innerText)" class="number">4</button>
+                <button onclick="appendChildToDisplayResult(this.innerText)" class="number">5</button>
+                <button onclick="appendChildToDisplayResult(this.innerText)" class="number">6</button>
+                <button onclick="appendChildToDisplayResult(this.innerText)" class="number">1</button>
+                <button onclick="appendChildToDisplayResult(this.innerText)" class="number">2</button>
+                <button onclick="appendChildToDisplayResult(this.innerText)" class="number">3</button>
+                <button onclick="clearDisplayContent()" class="operator">C</button>
+                <button onclick="appendChildToDisplayResult(this.innerText)" class="number">0</button>
+                <button onclick="appendChildToDisplayResult(this.innerText)" class="operator">.</button>
+                <button onclick="appendChildToDisplayResult(this.innerText)" class="operator">(</button>
+                <button onclick="appendChildToDisplayResult(this.innerText)" class="operator">)</button>
+                <button onclick="getResult()" class="operator">=</button>
+            </div>
+            <div class="operators">
+                <button onclick="appendChildToDisplayResult(this.innerText)" class="operator">+</button>
+                <button onclick="appendChildToDisplayResult(this.innerText)" class="operator">-</button>
+                <button onclick="appendChildToDisplayResult(this.innerText)" class="operator">*</button>
+                <button onclick="appendChildToDisplayResult(this.innerText)" class="operator">/</button>
+                <button onclick="appendChildToDisplayResult(this.innerText)" class="operator">%</button>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
